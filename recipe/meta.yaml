@@ -1,6 +1,6 @@
 {% set name = "monitor-server-api" %}
-{% set version = "1.0.0" %}
-{% set sha256 = "4ef28cf26db464e65160b6672650d36de0cceaae9004777bd2d238a712e2785f" %}
+{% set version = "1.0.1" %}
+{% set sha256 = "3a9c778a77ca1b1f87b259a14b49f74c43dc374d2243e6b839a5ead507319304" %}
 {% set md5 = "246a15525193fb6b3618afc4c151335f" %}
 
 
@@ -14,9 +14,9 @@ source:
   md5: {{ md5 }}
 
 build:
-  skip: True  # [win]
+  skip: true  # [win]
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -47,7 +47,7 @@ about:
   home: https://github.com/CFMTech/{{ name }}
   license: MIT
   license_file: LICENSE
-  summary: "A REST API that can be used a central point for collecting metrics from pytest-monitor."
+  summary: A REST API that can be used a central point for collecting metrics from pytest-monitor.
   description: |
     For short, monitor-server-api helps you to collect, historicize and exploit the data from your tests
     written with pytest and monitored with pytest-monitor
