@@ -1,7 +1,6 @@
 {% set name = "monitor-server-api" %}
 {% set version = "1.0.2" %}
 {% set sha256 = "986320ed4b7b20feb64c4fa81e2240d72c4a057dd2c7d9016e7d7a2d68e300f8" %}
-{% set md5 = "246a15525193fb6b3618afc4c151335f" %}
 
 
 package:
@@ -11,7 +10,6 @@ package:
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  md5: {{ md5 }}
 
 build:
   skip: true  # [win]
